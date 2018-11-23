@@ -76,7 +76,7 @@ describe('The the make table and the functions it uses', () => {
     it('is parsing a for loop with no part', () => {
         assert.equal(
             JSON.stringify(makeTable(parseCode('for(let a = 5; a<70; a++)\nf = 3;'))),
-            '[[1,"ForStatement","","a < 70",""],[1,"VariableDeclarator","a","","5"],[2,"AssignmentExpression","f","","3"]');
+            '[[1,"ForStatement","","a < 70",""],[1,"VariableDeclarator","a","","5"],[2,"AssignmentExpression","f","","3"]]');
     });
 });
 
